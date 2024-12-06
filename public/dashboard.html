@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to your Dashboard, <span id="user-name"></span>!</h1>
+    <nav>
+        <ul>
+            <li><a href="/logout">Log Out</a></li>
+            <li><a href="/create">Create New Item</a></li>
+            <li><a href="/update">Update Item</a></li>
+            <li><a href="/delete">Delete Item</a></li>
+            <li><a href="/items">View All Items</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const userName = document.cookie.replace(/(?:(?:^|.*;\s*)userName\s*=\s*([^;]*).*$)|^.*$/, "$1");
+
+        document.getElementById('user-name').textContent = userName;
+    </script>
+</body>
+</html>
