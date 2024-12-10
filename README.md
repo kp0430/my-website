@@ -1,1 +1,1 @@
-final project for web programming. Using NodeJS for the backend, html, css, and java for the frontend.
+final project for web programming. Using NodeJS for the backend, html, css, and javascript for the frontend.
